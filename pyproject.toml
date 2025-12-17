@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pe-policies"
+version = "0.1.0"
+description = "PE Firm AI Agent Policy Configuration"
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.setuptools.packages.find]
+include = ["pe_policies*"]
+
+[tool.setuptools.package-data]
+pe_policies = ["*.json"]
